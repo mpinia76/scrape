@@ -20,6 +20,7 @@ app.get('/scrape', async (req, res) => {
 
         const content = await page.content();
 
+
         await browser.close();
         res.send(content);
     } catch (error) {
