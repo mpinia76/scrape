@@ -41,11 +41,13 @@ app.get('/scrape', async (req, res) => {
         // const textoImportante = $('selector').text();
 
         // Enviar resultado
-        res.json({
+        /*res.json({
             url,
             title,
             // textoImportante
-        });
+        });*/
+        // ✅ Enviar el HTML completo sin parsear
+        res.send(html);
     } catch (error) {
         console.error('Error en scraper con axios:', error.message);
         res.status(500).send('Error en el scraper');
