@@ -2,7 +2,7 @@ const express = require('express');
 const puppeteer = require('puppeteer');
 
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT;
 
 console.log('Iniciando scraper...');
 
